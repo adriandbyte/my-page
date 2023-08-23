@@ -12,17 +12,18 @@ export default function Home () {
         <h2 className={`${inter.className} text-2xl italic`}>M4510</h2>
         <ToggleMode />
       </div>
-      <div className="grid md:auto-rows-[250px] grid-cols-3 md:grid-cols-4 gap-4 my-5 container mx-auto xl:px-20">
+      <div className="grid auto-rows-[300px] md:auto-rows-auto grid-cols-3 md:grid-cols-4 gap-4 my-5 container mx-auto xl:px-20">
         <div className="profile-img col-span-3 md:col-span-2 md:row-span-2 rounded-3xl">
           <Image
             alt="Adrian Dominguez"
             src="/profile.jpeg"
             className="w-[100%] h-[100%] rounded-3xl"
+            priority
             width={500}
             height={500}
           />
         </div>
-        <div className="about-me col-span-3 md:col-span-2 md:row-span-2  rounded-xl border-2 border-slate-400/10 bg-neutral-100 dark:bg-neutral-900 p-4 dark:text-white cursor-pointer">
+        <div className="about-me col-span-3 overflow-scroll md:overflow-hidden md:col-span-2 md:row-span-2  rounded-xl border-2 border-slate-400/10 bg-neutral-100 dark:bg-neutral-900 p-4 dark:text-white cursor-pointer">
           <div className={`about-me ${inter.className} leading-6`}>
             <h1 className="m-4 text-4xl italic font-bold">About me.</h1>
             <h2 className="text-2xl  italic">
@@ -39,12 +40,12 @@ export default function Home () {
             </p>
           </div>
         </div>
-        <div className="relative col-span-2 row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 dark:bg-neutral-900 dark:text-white cursor-pointer">
+        <div className="relative col-span-3 md:col-span-2 row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 dark:bg-neutral-900 dark:text-white cursor-pointer">
           <Image
             alt="Hacker Gif"
             src="/hacker.gif"
             fill
-            objectFit="cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="rounded-xl"
           />
         </div>
@@ -57,7 +58,7 @@ export default function Home () {
             })}
           </div>
         </div>
-        <div className="mode col-span-1 row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 dark:bg-neutral-900 p-4 dark:text-white cursor-pointer"></div>
+        {/* <div className="mode col-span-1 row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 dark:bg-neutral-900 p-4 dark:text-white cursor-pointer"></div> */}
       </div>
     </div>
   )

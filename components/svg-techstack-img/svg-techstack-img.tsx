@@ -1,16 +1,16 @@
-"use client";
-import Image from "next/image";
+'use client'
+import Image from 'next/image'
 
 interface Props {
-  src: string;
-  alt: string;
+  src: string
+  alt: string
 }
 
-export default function SvgTechstackImage({ src, alt }: Props) {
+export default function SvgTechstackImage ({ src, alt }: Props) {
   return (
-    <div className={`flex justify-center align-middle`}>
+    <div className={'flex justify-center align-middle'}>
       <Image
-        className="dark:invert rounded-xl"
+        className="dark:invert rounded-xl h-6 md:h-auto"
         alt={alt}
         src={`${src}.svg`}
         width={50}
@@ -18,5 +18,5 @@ export default function SvgTechstackImage({ src, alt }: Props) {
         priority
       />
     </div>
-  );
+  )
 }
