@@ -1,11 +1,11 @@
-import ToggleMode from "@/components/ToggleMode";
-import SvgTechstackImage from "@/components/svg-techstack-img/svg-techstack-img";
-import { Montserrat } from "next/font/google";
-import Image from "next/image";
+import ToggleMode from '@/components/ToggleMode'
+import SvgTechstackImage from '@/components/svg-techstack-img/svg-techstack-img'
+import { Montserrat } from 'next/font/google'
+import Image from 'next/image'
 
-const inter = Montserrat({ subsets: ["latin"] });
+const inter = Montserrat({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home () {
   return (
     <div className="w-100 h-screen m-5">
       <div className="flex justify-between xl:px-20 w-3/4 m-auto">
@@ -53,87 +53,87 @@ export default function Home() {
             {images.map((image, idx) => {
               return (
                 <SvgTechstackImage key={idx} src={image.src} alt={image.alt} />
-              );
+              )
             })}
           </div>
         </div>
         <div className="mode col-span-1 row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 dark:bg-neutral-900 p-4 dark:text-white cursor-pointer"></div>
       </div>
     </div>
-  );
+  )
 }
 
 const images = [
   {
-    src: "/html5",
-    alt: "HTML5",
+    src: '/html5',
+    alt: 'HTML5'
   },
   {
-    src: "/css3",
-    alt: "CSS3",
+    src: '/css3',
+    alt: 'CSS3'
   },
   {
-    src: "/bootstrap",
-    alt: "CSS3",
+    src: '/bootstrap',
+    alt: 'CSS3'
   },
   {
-    src: "/lodash",
-    alt: "CSS3",
+    src: '/lodash',
+    alt: 'CSS3'
   },
   {
-    src: "/sass",
-    alt: "SASS",
+    src: '/sass',
+    alt: 'SASS'
   },
   {
-    src: "/react",
-    alt: "React",
+    src: '/react',
+    alt: 'React'
   },
   {
-    src: "/javascript",
-    alt: "React",
+    src: '/javascript',
+    alt: 'React'
   },
   {
-    src: "/reactquery",
-    alt: "React Query",
+    src: '/reactquery',
+    alt: 'React Query'
   },
   {
-    src: "/nextdotjs",
-    alt: "Next.js",
+    src: '/nextdotjs',
+    alt: 'Next.js'
   },
   {
-    src: "/webpack",
-    alt: "Next.js",
+    src: '/webpack',
+    alt: 'Next.js'
   },
   {
-    src: "/eslint",
-    alt: "ESLint",
+    src: '/eslint',
+    alt: 'ESLint'
   },
   {
-    src: "/typescript",
-    alt: "Typescript",
+    src: '/typescript',
+    alt: 'Typescript'
   },
   {
-    src: "/reacthookform",
-    alt: "React Hook Form",
+    src: '/reacthookform',
+    alt: 'React Hook Form'
   },
   {
-    src: "/tailwindcss",
-    alt: "Tailwind CSS",
+    src: '/tailwindcss',
+    alt: 'Tailwind CSS'
   },
   {
-    src: "/mui",
-    alt: "Zod",
+    src: '/mui',
+    alt: 'Zod'
   },
   {
-    src: "/git",
-    alt: "Zod",
+    src: '/git',
+    alt: 'Zod'
   },
   {
-    src: "/zod",
-    alt: "Zod",
+    src: '/zod',
+    alt: 'Zod'
   },
   {
-    src: "/npm",
-    alt: "Zod",
-  },
-];
+    src: '/npm',
+    alt: 'Zod'
+  }
+]
